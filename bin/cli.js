@@ -7,5 +7,5 @@ const {analyze} = require('../lib');
 
 const argv = yargs.argv;
 
-analyze([argv._[0]])
+analyze(argv._[0])
   .then(result => console.log(result));
